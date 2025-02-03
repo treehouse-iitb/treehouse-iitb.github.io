@@ -25,7 +25,7 @@
     </a>
 </div>
 
-<div class="hero-section" id="cover-section">
+<div class="hero-section parallax" id="cover-section">
     <div class="hero-text">
         <h2>Treehouse, IIT Bombay</h2>
         <h1>Building climate-resilient human-natural systems</h1>
@@ -39,13 +39,31 @@
     <p>Resize the browser window to see how it works.</p>
 </div>
 
+
+<div class="hero-section theme1 parallax" id="featured_project1">
+    <h2>Featured project</h2>
+    <p>lorem ipsum</p>
+</div>
+
+
 <script>
 function myFunction() {
     document.getElementById("myTopnav").classList.toggle("responsive");
 }
+
 /* Function to follow section links by smooth scrolling */ 
 function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+document.body.onscroll = function() {  
+    var scrolltotop = document.scrollingElement.scrollTop;
+    var parallaxElements = document.querySelectorAll('.parallax');
+    
+    parallaxElements.forEach(function(element) {
+        var factor = element.dataset.speed || 0.5;
+        element.style.backgroundPosition = "center " + (scrolltotop * factor) + "px";
+    });
 }
 </script>
 
