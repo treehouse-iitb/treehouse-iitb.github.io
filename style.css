@@ -16,9 +16,10 @@
   --navbar-padding-top: 40px; 
   --navbar-padding-right: 35px; 
   --navbar-font-size: 20px; 
-  --navbar-total-height: calc((var(--navbar-padding-top)*2 + var(--navbar-font-size)) + 5px); /* FIXME: Navbar height should be 2*padding+font. I dont know why this -5px is needed */
+  --navbar-total-height: calc((var(--navbar-padding-top)*2 + var(--navbar-font-size))); /* Navbar height should be 2*padding+font. */
 
-  --logo-margin-top: 10px
+  --logo-margin-top: 10px;
+  --debug-borders: 1px solid red;
 }
 
 
@@ -45,24 +46,36 @@ body {
   color: var(--text-color-dark);
 }
 
+
+
 #cover-section {
   background-image: url('images/cover_2.jpg');
 }
 
+/* Hero section - lowest z-index
+ * Creates Block Formatting Context with flow-root
+ * Prevents margin collapse with navigation
+ * Negative margin moves section behind navbar
+ */
 .hero-section {
+  position: relative;
+  display: flow-root; /* needed to prevent weird gap between navbar and hero section */
+  z-index: 0;
   background-size: cover; /* Ensure the background image covers the entire section */
   background-position: top; /* Center the background image */
-  margin-top: calc(-1*var(--navbar-total-height)); /* move the cover section up to cover the navbar height */
   padding: 0px 5%;
   height: 100vh; /* Set the height to 100% of the viewport height (minus padding) */
+  margin-top: calc(-1*var(--navbar-total-height)); /* move the cover section up to cover the navbar height */
+  /* border: 1px solid blue; */
 }
 
 .hero-text {
   text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 50%;
+  top: 50%; /* Moves the element's top-left corner down to the center of its parent */
+  left: 50%; /* Moves the element's top-left corner right to the center of its parent */
+  transform: translate(-50%, -40%); /* tanslate by 50% of the element's own width, i.e., moves center in place of top left corner. The second number is 40% because we want to shift up less to account for navbar space */
   color: var(--text-color-dark);
 }
 
@@ -97,8 +110,13 @@ body {
   background-color: var(--hover-bg-color);
 }
 
+/* Logo - second highest z-index
+ * Appears above desktop menu but below mobile menu
+ * Absolute positioning removes from document flow
+ */
 .logo {
   position: absolute; /* Position the logo absolutely */
+  z-index: 2;
   top: var(--logo-margin-top); /* Adjust the top position */
   left: 5%; /* Adjust the left position */
   height: calc(var(--navbar-total-height) - 2*var(--logo-margin-top)); /* Adjust the height of the logo (including logo margins) to match ther navbar */
@@ -110,11 +128,19 @@ body {
   width: auto; /* Maintain the aspect ratio */
 }
 
+/* Desktop navigation - middle z-index
+ * Appears above hero section but below logo
+ * Uses flex layout for horizontal alignment
+ */
 .topnav {
   display: flex;
   justify-content: flex-end; /* Align links to the right side */
   background-color: none; /* menu background is transparent in laptop view */
   padding-right: 35px;
+  margin-bottom: 0; /* need this to avoid weird gap between navbar and hero section */
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .topnav a {
@@ -122,9 +148,10 @@ body {
   display: block; /* Display each link as a block-level element */
   color: var(--text-color); /* Set the text color of the links */
   text-align: center; /* Center the text within the links */
-  padding: var(--navbar-padding-top) 35px; /* Add padding inside the links for spacing */
+  padding: var(--navbar-padding-top) var(--navbar-padding-right); /* Add padding inside the links for spacing */
   text-decoration: none; /* Remove underline from the links */
   font-size: var(--navbar-font-size); /* Set the font size of the links */
+  line-height: var(--navbar-font-size);
 }
 
 .topnav a:hover {
@@ -140,7 +167,7 @@ body {
   display: none; /* Hide the menu icon by default */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .topnav a {
     display: none; /* Hide all links except the first child link */
   }
@@ -150,9 +177,14 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Mobile menu - highest z-index
+ * Appears above all elements when expanded
+ * Only visible in mobile view (max-width: 600px)
+ */
+@media screen and (max-width: 900px) {
   .topnav.responsive {
     display: flex;
+    z-index: 3;
     flex-direction: column;
     align-items: flex-start; /* Align links to the left in the dropdown menu */
     position: relative;
@@ -171,13 +203,11 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 900px), (max-height: 600px) {
   .hero-text {
-    width: 75%; /* Set the width to 75% for better fit on small screens */
-    left: 12.5%; /* Adjust left to maintain centering with new width */
-    transform: translate(0, -50%); /* Remove horizontal translate to keep it centered */
+    width: 75%; /* allot more screen real estate for the text on mobile screens */
   }
-
+  
   .hero-text h1 {
     font-size: 24px; /* Adjust the font size for small screens */
   }
