@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<div class="logo">
+    <img src="images/logo_big.png" alt="Logo">
+</div>
+
+<div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#research">Research</a>
+    <a href="#people">People</a>
+    <a href="#news">News</a>
+    <a href="#join us">Join us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="hero-section" id="cover-section">
+    <div class="hero-text">
+        <h2>Treehouse, IIT Bombay</h2>
+        <h1>Building climate-resilient human-natural systems</h1>
+        <p>The Terrestrial Ecosystems and Evolution House (Treehouse) research group at IIT Bombay takes a systems perspective, applying the principles of natural selection to explore the  climate responses and enhance the adaptive capacity of natural and human-natural systems</p>
+        <button onclick="scrollToSection('section_research_themes')">Climb in</button>
+    </div>
+</div>
+
+<div class="section theme2" id="section_research_themes">
+    <h2>Research Themes</h2>
+    <p>Resize the browser window to see how it works.</p>
+</div>
+
+<script>
+function myFunction() {
+    document.getElementById("myTopnav").classList.toggle("responsive");
+}
+/* Function to follow section links by smooth scrolling */ 
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
+
+

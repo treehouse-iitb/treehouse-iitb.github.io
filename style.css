@@ -1,0 +1,196 @@
+:root {
+  --primary-color-dark: #333; /* Dark background color */
+  --secondary-color-dark: #04AA6D; /* Active link background color */
+  --text-color-dark: #f2f2f2; /* Light text color */
+  --hover-text-color-dark: green; /* Text color on hover */
+  --hover-bg-color-dark: #f2f2f2; /* Background color on hover */
+  --active-text-color-dark: white; /* Active link text color */
+
+  --primary-color: #f2f2f2; /* Dark background color */
+  --secondary-color: #04AA6D; /* Active link background color */
+  --text-color: #333; /* Light text color */
+  --hover-text-color: green; /* Text color on hover */
+  --hover-bg-color: #333; /* Background color on hover */
+  --active-text-color: black; /* Active link text color */
+
+  --navbar-padding-top: 40px; 
+  --navbar-padding-right: 35px; 
+  --navbar-font-size: 20px; 
+  --navbar-total-height: calc((var(--navbar-padding-top)*2 + var(--navbar-font-size)) + 5px); /* FIXME: Navbar height should be 2*padding+font. I dont know why this -5px is needed */
+
+  --logo-margin-top: 10px
+}
+
+
+body {
+  margin: 0; /* Remove default margin from all sides of the body */
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif; /* Set the font style for the entire page */
+}
+
+
+.section {
+  padding: 50px 5%; /* Add padding around the content */
+  text-align: left; /* text alignment within the section */
+}
+
+.theme1 {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.theme2 {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+}
+
+#cover-section {
+  background-image: url('images/cover_2.jpg');
+}
+
+.hero-section {
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: top; /* Center the background image */
+  margin-top: calc(-1*var(--navbar-total-height)); /* move the cover section up to cover the navbar height */
+  padding: 0px 5%;
+  height: 100vh; /* Set the height to 100% of the viewport height (minus padding) */
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color-dark);
+}
+
+.hero-text h1 {
+  font-size: 50px;
+}
+
+.hero-text h2 {
+  font-size: 24px;
+  color: var(--hover-text-color);
+}
+
+.hero-text p {
+  font-size: 18px;
+  padding-bottom: 18px;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: var(--text-color-dark);
+  background-color: var(--hover-text-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hero-text button:hover {
+  color: white;
+  background-color: var(--hover-bg-color);
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely */
+  top: var(--logo-margin-top); /* Adjust the top position */
+  left: 5%; /* Adjust the left position */
+  height: calc(var(--navbar-total-height) - 2*var(--logo-margin-top)); /* Adjust the height of the logo (including logo margins) to match ther navbar */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.logo img {
+  height: 100%; /* Make the image fill the container's height */
+  width: auto; /* Maintain the aspect ratio */
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right side */
+  background-color: none; /* menu background is transparent in laptop view */
+  padding-right: 35px;
+}
+
+.topnav a {
+  float: right; /* Align links to the right side of the container */
+  display: block; /* Display each link as a block-level element */
+  color: var(--text-color); /* Set the text color of the links */
+  text-align: center; /* Center the text within the links */
+  padding: var(--navbar-padding-top) 35px; /* Add padding inside the links for spacing */
+  text-decoration: none; /* Remove underline from the links */
+  font-size: var(--navbar-font-size); /* Set the font size of the links */
+}
+
+.topnav a:hover {
+  color: var(--hover-text-color); /* Change the text color when hovering over a link */
+}
+
+.topnav a.active {
+  background-color: none; /*#04AA6D; /* Set the background color for the active link */
+  color: var(--hover-text-color); /* Set the text color for the active link */
+}
+
+.topnav .icon {
+  display: none; /* Hide the menu icon by default */
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    display: none; /* Hide all links except the first child link */
+  }
+  .topnav a.icon {
+    display: block; /* Display the menu icon as a block-level element */
+    padding-right: 0px; /* Remove padding from the menu icon so that it stays in place when clicked (right padding for navbar and its text is both 35px) */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left in the dropdown menu */
+    position: relative;
+    background-color: var(--primary-color); /* menu background is not transparent in mobile view */
+  }
+  .topnav.responsive .icon {
+    position: absolute; /* Set the position of the menu icon */
+    right: 0; /* Align the menu icon to the right side */
+    top: 0; /* Align the menu icon to the top */
+  }
+  .topnav.responsive a {
+    float: none; /* Remove float property from links */
+    display: block; /* Display each link as a block-level element */
+    text-align: left; /* Align the text within the links to the left */
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 75%; /* Set the width to 75% for better fit on small screens */
+    left: 12.5%; /* Adjust left to maintain centering with new width */
+    transform: translate(0, -50%); /* Remove horizontal translate to keep it centered */
+  }
+
+  .hero-text h1 {
+    font-size: 24px; /* Adjust the font size for small screens */
+  }
+
+  .hero-text h2 {
+    font-size: 18px; /* Adjust the font size for small screens */
+  }
+
+  .hero-text p {
+    font-size: 14px; /* Adjust the font size for small screens */
+  }
+
+  .hero-text button {
+    font-size: 12px; /* Adjust the font size for small screens */
+  }
+}
