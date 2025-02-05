@@ -60,9 +60,9 @@ body {
   background-image: url('images/cover_2.jpg');
 }
 
-#featured_project1 {
+/* #featured_project1 {
   background-image: url('images/logo_big.png');
-}
+} */
 
 /* Hero section - lowest z-index
  * Creates Block Formatting Context with flow-root
@@ -289,4 +289,76 @@ body {
     flex: 0 1 100%;
     margin-bottom: 1rem;
   }
+}
+
+.footer {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+  padding: 60px 5% 40px; /* Add extra padding at the top to accommodate the logo */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footer .logo {
+  position: absolute;
+  top: -40px; /* Adjust the position to place the logo at the top edge of the footer */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px; /* Smaller height */
+  width: 60px; /* Smaller width */
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.footer .logo img {
+  width: 130%;
+  height: 130%; /* Scale the image to almost fill the circular frame */
+  transform: translate(-11.5%, -11.5%); /* translate image to center it within the frame. I dont know why the numbers work out to be these...*/
+  object-fit: fill;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-column a:hover {
+  color: var(--hover-text-color-dark);
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-icons a {
+  color: var(--text-color-dark);
+  font-size: 24px;
+}
+
+.footer .social-icons a:hover {
+  color: var(--hover-text-color-dark);
+}
+
+.footer .site-credits {
+  text-align: left;
+  margin-top: 20px;
+  flex-basis: 100%;
 }
