@@ -362,3 +362,72 @@ body {
   margin-top: 20px;
   flex-basis: 100%;
 }
+
+/* ...existing code... */
+
+.people-section {
+  padding: 50px 5%;
+  text-align: center;
+}
+
+.people-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.person-card {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.person-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.person-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.person-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pi-card img {
+  width: 200px;
+  height: 200px;
+}
+
+.person-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.person-card .social-icons a {
+  color: var(--text-color);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.person-card .social-icons a:hover {
+  color: var(--hover-text-color);
+}
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css');
+
