@@ -33,13 +33,13 @@ body {
 .parallax {
   background-attachment: scroll;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .section {
   padding: 50px 5%; /* Add consistent padding for all content */
   text-align: left;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 }
@@ -84,6 +84,11 @@ button:hover {
 
 #cover-section {
   background-image: url('images/cover_2.jpg');
+}
+
+#featured_project {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.1) 100%), url('images/amazon.jpg');
+  position: relative;
 }
 
 /* #featured_project1 {
@@ -468,4 +473,76 @@ button:hover {
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css');
+
+/* ...existing code... */
+
+/* .featured-project-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('images/cover_2.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+
+/* ...existing code... */
+
+/* .featured-project-section {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0.1) 100%), url('images/cover_2.jpg');
+  background-size: cover;
+  background-position: top center; 
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+} 
+*/
+
+.featured-project-text {
+  color: var(--text-color-dark);
+  padding: 20px;
+  max-width: 50%;
+  text-align: left;
+}
+
+.featured-project-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.featured-project-text h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.featured-project-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.featured-project-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: var(--text-color-dark);
+  background-color: var(--hover-text-color);
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.featured-project-text button:hover {
+  color: white;
+  background-color: var(--hover-bg-color);
+}
+
+@media screen and (max-width: 768px) {
+  .featured-project-text {
+    max-width: 100%;
+  }
+}
+
+/* ...existing code... */
 
