@@ -91,9 +91,6 @@ button:hover {
   position: relative;
 }
 
-/* #featured_project1 {
-  background-image: url('images/logo_big.png');
-} */
 
 /* Hero section - lowest z-index
  * Creates Block Formatting Context with flow-root
@@ -542,6 +539,61 @@ button:hover {
   .featured-project-text {
     max-width: 100%;
   }
+}
+
+/* ...existing code... */
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--hover-text-color);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: var(--hover-bg-color);
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.map {
+  flex: 1;
+  min-width: 300px;
 }
 
 /* ...existing code... */
