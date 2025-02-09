@@ -17,7 +17,7 @@
 
 <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
-    <a href="#research">Research</a>
+    <a href="research.html">Research</a> <!-- Update this link -->
     <a href="people.html">People</a> <!-- Update this link -->
     <a href="#news">News</a>
     <a href="#join us">Join us</a>
@@ -26,17 +26,20 @@
     </a>
 </div>
 
-<div class="hero-section parallax" id="cover-section">
+<div class="hero-section parallax button" id="cover-section">
     <div class="hero-text">
         <h2>The Treehouse, IIT Bombay</h2>
         <h1>Building climate-resilient human-natural systems</h1>
-        <p>Welcome to the Terrestrial Ecosystems and Evolution House (Treehouse) research group at the Centre for Climate Studies, IIT Bombay. At Treehouse, we take a systems perspective to explore the climate responses of natural and human-natural systems and enhance their adaptive capacity</p>
+        <p>Welcome to the Terrestrial Ecosystems and Evolution House (Treehouse) research group at the Centre for Climate Studies, IIT Bombay. At Treehouse, we study how ecosystems adapt to climate change through a systems perspective. Applying the principles of natural selection, we explore ways to improve the adaptive capacity and climate-resilience of both natural and human-natural systems.</p>
         <button onclick="scrollToSection('section_research_themes')">Climb in</button>
     </div>
 </div>
 
-<div class="section theme1" id="section_research_themes">
+<div class="section theme1 button" id="section_research_themes">
     <h2>Research Themes</h2>
+    <p>The research philosophy at Treehouse is to build bottom up towards climate resilience, i.e., first understanding how components of an ecosystem function, integrating those components to quantitatively predict emergent ecosystem behaviours, and using this knowlegde to design the best course of climate action.     
+        Research is strongly interdisciplinary, cutting across several fields and borrowing tools and techniques from each of them. It is organized under three core verticals as follows.</P>
+    </p>
     <div class="card-container">
         <div class="card">
             <img src="images/green-tree-leaves.jpg" alt="Research Theme 1. Photo credits: Shutterstock (https://education.nationalgeographic.org/resource/photosynthesis/)" class="card-image">
@@ -46,31 +49,40 @@
             </div>
         </div>
         <div class="card">
-            <img src="images/interaction_network.jpg" alt="Research Theme 2. Photo credits: The QUINTESSENCE Consortium (https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(15)00300-6)" class="card-image">
+            <img src="images/complex_system_dalle_crop.png" alt="Research Theme 2. Photo credits: The QUINTESSENCE Consortium (https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(15)00300-6)" class="card-image">
             <div class="card-content">
                 <h3>Systems Analysis</h3>
                 <p>What are the emergent phenomena in complex systems arising from the interactions of individuals? </p>
             </div>
         </div>
         <div class="card">
-            <img src="images/check_dam.jpg" alt="Research Theme 3. Photo: https://commons.wikimedia.org/wiki/File:Check_dam_@_shevaroy_foot_hills.jpg" class="card-image">
+            <img src="images/codesign_dalle.png" alt="Research Theme 3. Photo: https://commons.wikimedia.org/wiki/File:Check_dam_@_shevaroy_foot_hills.jpg" class="card-image">
             <div class="card-content">
                 <h3>Co-design</h3>
                 <p>How can we collaborate with diverse stakeholders to craft actionable climate solutions?</p>
             </div>
         </div>
     </div>
-    <p>End research themes</p>
+    <div class="button-container">
+        <button onclick="scrollToSection('featured_project1')">Featured projects</button>
+        <button onclick="location.href='research.html'">Explore all projects</button>
+    </div>
+    <div class="spacer"></div> <!-- Add this line -->
 </div>
 
 
-<div class="hero-section theme2 parallax" id="featured_project1">
-    <h2>Featured project 2</h2>
+<div class="section theme2 parallax" id="featured_project1">
+    <h2>Featured project</h2>
     <p>lorem ipsum</p>
+    <div class="button-container">
+        <button onclick="location.href='research.html'">Explore all projects</button>
+    </div>
+    <div class="spacer"></div> <!-- Add this line -->
 </div>
 
-<div class="hero-section theme1 parallax" id="featured_project2">
-    <h2>Featured project 2</h2>
+
+<div class="section theme1 parallax" id="featured_project2">
+    <h2>News</h2>
     <p>lorem ipsum</p>
 </div>
 
