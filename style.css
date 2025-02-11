@@ -593,8 +593,17 @@ button:hover {
 
 .map {
   flex: 1;
-  min-width: 300px;
 }
 
-/* ...existing code... */
+.map iframe {
+  flex: 1;
+  position: relative; 
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
 
