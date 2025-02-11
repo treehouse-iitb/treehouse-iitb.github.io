@@ -226,23 +226,23 @@ button:hover {
 
 @media screen and (max-width: 900px), (max-height: 600px) {
   .hero-text {
-    width: 75%; /* allot more screen real estate for the text on mobile screens */
+    width: 85%; /* allot more screen real estate for the text on mobile screens */
   }
   
   .hero-text h1 {
-    font-size: 24px; /* Adjust the font size for small screens */
+    font-size: 26px; /* Adjust the font size for small screens */
   }
 
   .hero-text h2 {
-    font-size: 18px; /* Adjust the font size for small screens */
+    font-size: 20px; /* Adjust the font size for small screens */
   }
 
   .hero-text p {
-    font-size: 14px; /* Adjust the font size for small screens */
+    font-size: 16px; /* Adjust the font size for small screens */
   }
 
   .hero-text button {
-    font-size: 12px; /* Adjust the font size for small screens */
+    font-size: 18px; /* Adjust the font size for small screens */
   }
 }
 
