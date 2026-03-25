@@ -8,27 +8,73 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+
+    <style>
+
+        .collapsible {
+            background-color: white;                 /* white background */
+            color: var(--primary-color-dark);        /* dark text */
+            cursor: pointer;
+            padding: 14px 18px;
+            width: 100%;
+            border: 1px solid #dcdcdc;               /* border line */
+            border-left: 6px solid var(--primary-color-dark); /* dark strip on left */
+            text-align: left;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+
+        .collapsible:hover {
+            background-color: white;
+            color: green;
+            border: 1px solid green;
+            border-left: 6px solid green;
+        }
+
+        .collapsible::after {
+            content: " ▼";
+            font-size: 18px;
+            float: right;
+            transition: transform 0.3s ease;
+        }
+
+        .collapsible.active::after {
+            transform: rotate(180deg);
+        }
+
+        .content {
+            display: none;
+            padding-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-<!-- Re-add the logo here -->
 <div class="logo">
     <img src="images/logo_big.png" alt="Logo">
 </div>
 
 <div class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
-    <a href="research.html">Research</a> <!-- Update this link -->
+    <a href="research.html">Research</a>
     <a href="people.html" class="active">People</a>
-    <!-- <a href="index.html#news">News</a> -->
+    <a href="courses.html">Courses</a>
+    <a href="lab_diaries.html">Lab Diaries</a>
     <a href="join_us.html">Join us</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
 </div>
 
+<!-- ================= PRINCIPAL INVESTIGATOR ================= -->
+<div class="section" style="padding-bottom: 10px;">
+<button class="collapsible">Principal Investigator</button>
+<div class="content">
 <div class="people-section">
-    <h2>Principal Investigator</h2>
     <div class="people-container">
         <div class="person-card pi-card">
             <img src="images/people/jaideep.jpg" alt="Jaideep Joshi">
@@ -41,14 +87,20 @@
                 <a href="https://twitter.com/jaideepjoshi88"><i class="fab fa-twitter"></i></a>
                 <a href="https://scholar.google.com/citations?hl=en&user=1kJzNuMAAAAJ"><i class="ai ai-google-scholar"></i></a>
                 <a href="https://github.com/jaideep777"><i class="fab fa-github"></i></a>
-                <!-- <a href="https://linkedin.com/in/jaideep"><i class="fab fa-linkedin-in"></i></a> -->
             </div>
         </div>
     </div>
 </div>
+</div>
+</div>
 
+<!-- ================= Postdoctoral researchers ================= -->
+<div class="section" style="padding-top: 0px; padding-bottom: 10px;">
+<button class="collapsible">Postdoctoral researchers</button>
+
+
+<div class="content">
 <div class="people-section theme2">
-    <h2>Current Team</h2>
     <div class="people-container">
         <div class="person-card">
             <img src="images/people/other/shipra_singh.jpg" alt="Person 1">
@@ -62,13 +114,78 @@
         </div>
     </div>
 </div>
+</div>
+</div>
 
-
+<!-- ================= PhD students ================= -->
+<div class="section" style="padding-top: 0px; padding-bottom: 10px;">
+<button class="collapsible">PhD students</button>
+<div class="content">
 <div class="people-section">
-    <h2>Co-supervised researchers (Current)</h2>
     <div class="people-container">
         <div class="person-card">
-            <img src="images/people/other/elisa_stefaniak.jpg" alt="Person 1">
+            <img src="images_people/samarpita.jpeg">
+            <h3>Samarpita Sahu</h3>
+            <h4>PhD at Centre for Climate Studies, IIT Bombay</h4>
+            <p>Samarpita is currently exploring the fascinating world of plant hydraulics. Her work delves into understanding hydraulic conductance and related functional traits to uncover adaptation strategies amid climate change. A happily confused soul, believing confusion is where science begins. Outside research, she experiments with vibrant Indian fusion cooking, hums melodies to recharge, and unapologetically embraces her sweet tooth.</p>
+            <div class="social-icons">
+                <a href="https://iiasa.ac.at/staff/elisa-stefaniak"><i class="fas fa-globe"></i></a>
+                <a href="https://scholar.google.com/citations?user=h6qUu9QAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <img src="images_people/tamanna.jpeg">
+            <h3>Tamanna Mishra</h3>
+            <h4>PhD at Centre for Climate Studies, IIT Bombay</h4>
+            <p>Tamanna's research broadly focuses on assessing the Photosynthetic Traits of, and Variations in Strategies observed in Plants under a variety of environmental conditions. Before joining as a PhD scholar, she did her Bachelors and Masters in Geography, and a PG Diploma in Geoinformatics. Outside the lab, you can usually find her feeding stray cats, practising music or doing art.</p>
+            <div class="social-icons">
+                <a href="https://iiasa.ac.at/staff/tania-maxwell"><i class="fas fa-globe"></i></a>
+                <a href="https://scholar.google.ca/citations?user=BnCknmEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </div>
+        </div>
+
+        <div class="person-card">
+            <img src="images_people/mohabbat.jpeg">
+            <h3>Mohabbat Singh</h3>
+            <h4>PhD at Centre for Climate Studies, IIT Bombay</h4>
+            <p>Mohabbat's research explores how plants might behave in tomorrow’s world, focusing on resource allocation between plant organs (allocation) and how their growth relationships shape overall plant form and function (allometry) under changing climates. He aims to improve the representation of tropical forests in vegetation models by combining experimental evidence, trait-based approaches, field observations and vegetation modeling.
+He low-key aspires to turn his research and experiences into stories that connect with people someday. Ultimately, he is part researcher, part storyteller.
+</p>
+            <div class="social-icons">
+            <a href="https://iiasa.ac.at/staff/tania-maxwell"><i class="fas fa-globe"></i></a>
+            <a href="https://scholar.google.ca/citations?user=BnCknmEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </div>
+        </div>
+
+
+        <div class="person-card">
+            <img src="images_people/sushil_pic.jpeg">
+            <h3>Sushil Jangra</h3>
+            <h4>PhD at Centre for Climate Studies, IIT Bombay</h4>
+            <p>For Sushil, forests are a place of belonging, and stepping into one feels like entering a story still unfolding. This drew him to the quiet task of understanding these living systems so that we may better protect them and the life they shelter.
+He studies forest demography in the context of environmental and climate change. His journey has taken him through NIT Kurukshetra, IISc Bengaluru, and the Nature Conservation Foundation. Beyond research, he is drawn to the outdoors, art, and sport, always walking between learning and the wild.
+</p>
+            <div class="social-icons">
+            <a href="https://iiasa.ac.at/staff/tania-maxwell"><i class="fas fa-globe"></i></a>
+            <a href="https://scholar.google.ca/citations?user=BnCknmEAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+</div>
+
+<!-- ================= CO-SUPERVISED ================= -->
+<div class="section" style="padding-top: 0px; padding-bottom: 10px;">
+<button class="collapsible">Co-supervised researchers</button>
+<div class="content">
+<div class="people-section">
+    <div class="people-container">
+        <div class="person-card">
+            <img src="images/people/other/elisa_stefaniak.jpg">
             <h3>Elisa Stefaniak</h3>
             <h4>Postdoc at IIASA, Austria</h4>
             <p>Elisa joined us as a postdoc in the RESIST project since 2022. Her main supervisor is Florian Hofhansl. She is coupling Plant-FATE with IIASA's CWATM model to understand the food-water-biodiversity nexus in the Bhima basin in India.</p>
@@ -77,8 +194,9 @@
                 <a href="https://scholar.google.com/citations?user=h6qUu9QAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
             </div>
         </div>
+
         <div class="person-card">
-            <img src="images/people/other/tania_maxwell.jpg" alt="Person 2">
+            <img src="images/people/other/tania_maxwell.jpg">
             <h3>Tania Maxwell</h3>
             <h4>Postdoc at IIASA, Austria</h4>
             <p>Tania joined us as a postdoc in the RESIST project since 2022. Her main supervisor is Florian Hofhansl. She is exploring the coordination between fine-root traits.</p>
@@ -89,19 +207,28 @@
         </div>
     </div>
 </div>
-
-
-<div class="people-section theme2">
-    <h2>Alumni</h2>
-    <p>None yet</p>
+</div>
 </div>
 
-<!-- Just to add space until footer -->
+<!-- ================= ALUMNI ================= -->
+<div class="section" style="padding-top: 0px; padding-bottom: 10px;">
+<button class="collapsible">Alumni</button>
+<div class="content">
+<div class="people-section theme2">
+    <p>None yet</p>
+</div>
+</div>
+</div>
+
+<!-- ================= ALUMNI CO-SUPERVISED ================= -->
+<div class="section" style="padding-top: 0px">
+<button class="collapsible">Alumni (co-supervised)</button>
+<div class="content">
 <div class="people-section">
-    <h2>Alumni (co-supervised)</h2>
     <div class="people-container">
+
         <div class="person-card">
-            <img src="images/people/other/toyo_vignal.jpg" alt="Person 1">
+            <img src="images/people/other/toyo_vignal.jpg">
             <h3>Toyo Vignal</h3>
             <h4>PhD intern at OIST, Japan</h4>
             <p>Toyo worked on developing the theory of evolution in continuously structured populations. She was a PhD research intern in the group of Ulf Dieckmann, who was her main supervisor.</p>
@@ -109,31 +236,31 @@
                 <a href="https://scholar.google.com/citations?user=sKdESw8AAAAJ&hl=fr"><i class="ai ai-google-scholar"></i></a>
             </div>
         </div>
+
         <div class="person-card">
-            <img src="images/people/avatar_female.avif" alt="Person 1">
+            <img src="images/people/avatar_female.avif">
             <h3>Joanna Simms</h3>
             <h4>YSSP Fellow at IIASA, Austria</h4>
             <p>Joanna worked on optimal nitrogen acquisition for photosynthesis. Her main supervisor was Elisa Stefaniak</p>
             <div class="social-icons">
-                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                 <a href="https://scholar.google.com/citations?user=-DZeM0MAAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a>
             </div>
         </div>
+
         <div class="person-card">
-            <img src="images/people/avatar_female.avif" alt="Person 1">
+            <img src="images/people/avatar_female.avif">
             <h3>Wenjia Cai (Shirley)</h3>
             <h4>YSSP Fellow at IIASA, Austria</h4>
             <p>Wenjia worked on the nitrogen limitation on leaf area index. Her main supervisor was Oskar Franklin.</p>
-            <div class="social-icons">
-            </div>
         </div>
+
     </div>
 </div>
-
-<!-- Just to add space until footer -->
-<div class="people-section">
+</div>
 </div>
 
+
+<!-- ================= FOOTER ================= -->
 <div class="footer">
     <div class="logo">
         <img src="images/logo_small.png" alt="Logo">
@@ -158,11 +285,12 @@
     <div class="footer-column">
         <h3>Quick Links</h3>
         <a href="index.html">Home</a>
-        <a href="research.html">Research</a> <!-- Update this link -->
-        <a href="people.html">People</a> <!-- Update this link -->
-        <!-- <a href="#news">News</a> -->
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="courses.html">Courses</a>
+        <a href="lab_diaries.html">Lab Diaries</a>
         <a href="join_us.html">Join us</a>
-        </div>
+    </div>
     <div class="footer-column site-credits">
         <p>Website developed by Mandar Bapat and Jaideep Joshi.</p> 
         <p>Logo designed by Vedika Bapat with inputs from Chethana Casiker and Jaideep Joshi.</p>
@@ -172,6 +300,15 @@
 <script>
 function myFunction() {
     document.getElementById("myTopnav").classList.toggle("responsive");
+}
+
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  });
 }
 </script>
 

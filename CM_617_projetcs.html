@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM 617 Projects - Treehouse IITB</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        /* Project Layout */
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 70px 90px; /* row-gap column-gap */
+            justify-items: center;
+            margin-top: 50px;
+        }
+
+        .project-item {
+            text-align: center;
+        }
+
+        .project-item img {
+            width: 200px;
+            border: 2px solid green;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item img:hover {
+            transform: scale(1.06);
+            box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+        }
+
+        .project-item h4 {
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .project-item a {
+            color: green;
+            text-decoration: underline;
+        }
+
+        .project-item a:hover {
+            color: darkgreen;
+        }
+
+        /* Responsive (does not affect desktop 4-column layout) */
+        @media (max-width: 1000px) {
+            .project-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .project-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Logo -->
+<div class="logo">
+    <img src="images/logo_big.png" alt="Logo">
+</div>
+
+<!-- Navigation -->
+<div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="people.html">People</a>
+    <a href="courses.html" class="active">Courses</a>
+    <a href="lab_diaries.html">Lab Diaries</a>
+    <a href="join_us.html">Join us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<!-- Page Content -->
+<div class="section theme1">
+    <h2>CM 617 - Sustainability Principles and Practices</h2>
+    <h2>Featured Course Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-item">
+            <a href="https://youtu.be/wizyiXi-L6w" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/wizyiXi-L6w/hqdefault.jpg" alt="BIRDS">
+            </a>
+            <h4><a href="https://youtu.be/wizyiXi-L6w" target="_blank">BIRDS</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/hLiJpgkwRTw" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/hLiJpgkwRTw/hqdefault.jpg" alt="dona-pattAl">
+            </a>
+            <h4><a href="https://youtu.be/hLiJpgkwRTw" target="_blank">dona-pattAl</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/LGNz_JQ3nXM" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/LGNz_JQ3nXM/hqdefault.jpg" alt="SuRgents">
+            </a>
+            <h4><a href="https://youtu.be/LGNz_JQ3nXM" target="_blank">SuRgents</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/eJjrvhVAQR8" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/eJjrvhVAQR8/hqdefault.jpg" alt="BluePrint">
+            </a>
+            <h4><a href="https://youtu.be/eJjrvhVAQR8" target="_blank">BluePrint</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/lvnOM0SZ-Yo" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/lvnOM0SZ-Yo/hqdefault.jpg" alt="FUELIQ">
+            </a>
+            <h4><a href="https://youtu.be/lvnOM0SZ-Yo" target="_blank">FUELIQ</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://www.youtube.com/watch?v=OGTWoPboufY" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/OGTWoPboufY/hqdefault.jpg" alt="StepVolt">
+            </a>
+            <h4><a href="https://www.youtube.com/watch?v=OGTWoPboufY" target="_blank">StepVolt</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/7O2KuUaB080" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/7O2KuUaB080/hqdefault.jpg" alt="DACE">
+            </a>
+            <h4><a href="https://youtu.be/7O2KuUaB080" target="_blank">DACE</a></h4>
+        </div>
+
+        <div class="project-item">
+            <a href="https://youtu.be/vMaY6aOO_58" target="_blank" rel="noopener">
+                <img src="https://img.youtube.com/vi/vMaY6aOO_58/hqdefault.jpg" alt="ECO-PLAY">
+            </a>
+            <h4><a href="https://youtu.be/vMaY6aOO_58" target="_blank">ECO-PLAY</a></h4>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="logo">
+        <img src="images/logo_small.png" alt="Logo">
+    </div>
+    <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: jaideep.joshi at iitb.ac.in</p>
+        <p>Phone: +91-22-2576 5147</p>
+    </div>
+    <div class="footer-column">
+        <h3>Address</h3>
+        <p>403 RBTIC, IIT Bombay</p>
+        <p>Powai, Mumbai 400076</p>
+    </div>
+    <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com/jaideepjoshi88"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/jaideep777"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="people.html">People</a>
+        <a href="courses.html">Courses</a>
+        <a href="lab_diaries.html">Lab Diaries</a>
+        <a href="join_us.html">Join us</a>
+    </div>
+    <div class="footer-column site-credits">
+        <p>Website developed by Mandar Bapat and Jaideep Joshi.</p>
+        <p>Logo designed by Vedika Bapat with inputs from Chethana Casiker and Jaideep Joshi.</p>
+    </div>
+</div>
+
+<script>
+function myFunction() {
+    document.getElementById("myTopnav").classList.toggle("responsive");
+}
+</script>
+
+</body>
+</html>
