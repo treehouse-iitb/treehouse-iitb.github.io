@@ -1,0 +1,36 @@
+<div class="person-card 
+  {% if include.pi %}
+    pi-card
+  {% elsif include.alumni %}
+    alum-card
+  {% else %}
+    default-card
+  {% endif %}"
+  data-role="{{ include.role }}">
+    <img src="{{ include.image }}" alt="{{ include.name }}">
+    <h3>{{ include.name }}</h3>
+    <h4>{{ include.title }}</h4>
+    <p>{{ include.bio }}</p>
+
+    <div class="social-icons">
+        {% if include.links.globe %}
+        <a href="{{ include.links.globe }}"><i class="fas fa-globe"></i></a>
+        {% endif %}
+
+        {% if include.links.email %}
+        <a href="{{ include.links.email }}"><i class="fas fa-envelope"></i></a>
+        {% endif %}
+
+        {% if include.links.twitter %}
+        <a href="{{ include.links.twitter }}"><i class="fab fa-twitter"></i></a>
+        {% endif %}
+
+        {% if include.links.scholar %}
+        <a href="{{ include.links.scholar }}"><i class="ai ai-google-scholar"></i></a>
+        {% endif %}
+
+        {% if include.links.github %}
+        <a href="{{ include.links.github }}"><i class="fab fa-github"></i></a>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="logo">
+    <img src="/images/logo_big.png" alt="Logo">
+</div>
+
+<div class="topnav" id="myTopnav">
+    {% for item in site.data.navigation %}
+    <a href="{{ item.url }}" 
+    class="{% if page.url == item.url %}active{% endif %}">
+    {{ item.name }}
+    </a>
+    {% endfor %}
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>

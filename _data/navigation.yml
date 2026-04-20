@@ -1,0 +1,11 @@
+- name: Home
+  url: /
+
+- name: Research
+  url: /research.html
+
+- name: People
+  url: /people.html
+
+- name: Join us
+  url: /join_us.html

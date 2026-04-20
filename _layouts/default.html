@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <!-- Meta tags -->
+    <meta property="og:title" content="Treehouse IITB">
+    <meta property="og:description" content="Climate resilience research group at IIT Bombay.">
+    <meta property="og:image" content="/images/logo_big.png">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+{% include header.html %}
+
+{{ content }}
+
+{% include footer.html %}
+
+<script>
+function myFunction() {
+    document.getElementById("myTopnav").classList.toggle("responsive");
+}
+
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+const parallaxElements = document.querySelectorAll('.parallax');
+
+// Track which elements are visible
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        entry.target.isVisible = entry.isIntersecting;
+    });
+}, { threshold: 0.1 });
+
+parallaxElements.forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    parallaxElements.forEach(el => {
+        if (!el.isVisible) return; // ✅ only animate when visible
+
+        const speed = el.dataset.speed || 0.5;
+        const offset = el.offsetTop;
+
+        const yPos = (scrollTop - offset) * speed;
+        el.style.backgroundPosition = `center ${yPos}px`;
+    });
+});
+
+function filterPeople(role) {
+    const cards = document.querySelectorAll('.person-card');
+    const buttons = document.querySelectorAll('.filter-buttons button');
+
+    // Toggle active button
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    // Filter cards
+    cards.forEach(card => {
+
+        // ✅ Always show PI
+        if (card.classList.contains('pi-card')) {
+            card.style.display = 'block';
+            return;
+        }
+
+        // Normal filtering
+        if (role === 'all' || card.dataset.role === role) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+
+</body>
+</html>

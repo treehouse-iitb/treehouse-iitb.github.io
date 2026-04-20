@@ -1,0 +1,69 @@
+pi:
+  - name: Jaideep Joshi
+    role: pi
+    image: /images/people/jaideep.jpg
+    title: Assistant Professor
+    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and group leader of Treehouse. He is also a Guest Research Scholar at the International Institute for Applied Systems Analysis (IIASA), Austria, and a Visiting Researcher at the Okinawa Institute of Science and Technology (OIST), Japan.
+    links:
+      globe: https://jaideep777.github.io
+      email: mailto:jaideep.joshi@iitb.ac.in
+      twitter: https://twitter.com/jaideepjoshi88
+      scholar: https://scholar.google.com/citations?hl=en&user=1kJzNuMAAAAJ
+      github: https://github.com/jaideep777
+
+team:
+
+cosupervised_current:
+  []
+
+alumni:
+  - name: Shipra Singh
+    role: postdoc
+    image: /images/people/other/shipra_singh.jpg
+    title: Postdoc at IIASA, Austria
+    bio: Shipra joined us as a postdoc in 2022 under the RESIST project at IIASA, Austria. She is working on assessing ecosystem services and stakeholder perspectives in the Himalayan region.
+    links:
+      globe: https://iiasa.ac.at/staff/shipra-singh
+      scholar: https://scholar.google.com/citations?user=8KyphvMAAAAJ&hl=en
+
+cosupervised_alumni:
+  - name: Elisa Stefaniak
+    role: postdoc
+    image: /images/people/other/elisa_stefaniak.jpg
+    title: Postdoc at IIASA, Austria
+    bio: Elisa joined us as a postdoc in the RESIST project since 2022. Her main supervisor is Florian Hofhansl. She is coupling Plant-FATE with IIASA's CWATM model to understand the food-water-biodiversity nexus in the Bhima basin in India.
+    links:
+      globe: https://iiasa.ac.at/staff/elisa-stefaniak
+      scholar: https://scholar.google.com/citations?user=h6qUu9QAAAAJ&hl=en
+
+  - name: Tania Maxwell
+    role: postdoc
+    image: /images/people/other/tania_maxwell.jpg
+    title: Postdoc at IIASA, Austria
+    bio: Tania joined us as a postdoc in the RESIST project since 2022. Her main supervisor is Florian Hofhansl. She is exploring the coordination between fine-root traits.
+    links:
+      globe: https://iiasa.ac.at/staff/tania-maxwell
+      scholar: https://scholar.google.ca/citations?user=BnCknmEAAAAJ&hl=en
+
+  - name: Toyo Vignal
+    role: intern
+    image: /images/people/other/toyo_vignal.jpg
+    title: PhD intern at OIST, Japan
+    bio: Toyo worked on developing the theory of evolution in continuously structured populations. She was a PhD research intern in the group of Ulf Dieckmann, who was her main supervisor.
+    links:
+      scholar: https://scholar.google.com/citations?user=sKdESw8AAAAJ&hl=fr
+
+  - name: Joanna Simms
+    role: intern
+    image: /images/people/avatar_female.avif
+    title: YSSP Fellow at IIASA, Austria
+    bio: Joanna worked on optimal nitrogen acquisition for photosynthesis. Her main supervisor was Elisa Stefaniak.
+    links:
+      scholar: https://scholar.google.com/citations?user=-DZeM0MAAAAJ&hl=en
+
+  - name: Wenjia Cai (Shirley)
+    role: intern
+    image: /images/people/avatar_female.avif
+    title: YSSP Fellow at IIASA, Austria
+    bio: Wenjia worked on the nitrogen limitation on leaf area index. Her main supervisor was Oskar Franklin.
+    links: {}

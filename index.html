@@ -1,45 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Treehouse IITB</title>
-
-    <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Treehouse IITB">
-    <meta property="og:description" content="Welcome to the Terrestrial Ecosystems and Evolution House (Treehouse) research group at the Centre for Climate Studies, IIT Bombay. At Treehouse, we study how ecosystems adapt to climate change through a systems perspective. Applying the principles of natural selection, we explore ways to improve the adaptive capacity and climate-resilience of both natural and human-natural systems.">
-    <meta property="og:image" content="https://treehouse-iitb.github.io/images/logo_big.png">
-    <meta property="og:logo" content="https://treehouse-iitb.github.io/images/logo_big.png">
-    <meta property="og:url" content="https://treehouse-iitb.github.io/research.html">
-    <meta property="og:type" content="website">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Treehouse IITB">
-    <meta name="twitter:description" content="Welcome to the Terrestrial Ecosystems and Evolution House (Treehouse) research group at the Centre for Climate Studies, IIT Bombay. At Treehouse, we study how ecosystems adapt to climate change through a systems perspective. Applying the principles of natural selection, we explore ways to improve the adaptive capacity and climate-resilience of both natural and human-natural systems.">
-    <meta name="twitter:image" content="https://treehouse-iitb.github.io/images/logo_big.png">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
-
-<!-- Re-add the logo here -->
-<div class="logo">
-    <img src="images/logo_big.png" alt="Logo">
-</div>
-
-<div class="topnav" id="myTopnav">
-    <a href="index.html" class="active">Home</a>
-    <a href="research.html">Research</a> <!-- Update this link -->
-    <a href="people.html">People</a> <!-- Update this link -->
-    <!-- <a href="#news">News</a> -->
-    <a href="join_us.html">Join us</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
-</div>
+---
+layout: default
+title: Home - Treehouse IITB
+---
 
 <div class="hero-section parallax button" id="cover-section">
     <div class="hero-text">
@@ -56,27 +18,12 @@
         Research is strongly interdisciplinary, cutting across several fields and borrowing tools and techniques from each of them. It is organized under three core verticals as follows.</P>
     </p>
     <div class="card-container">
-        <div class="card">
-            <img src="images/green-tree-leaves.jpg" alt="Research Theme 1. Photo credits: Shutterstock (https://education.nationalgeographic.org/resource/photosynthesis/)" class="card-image">
-            <div class="card-content">
-                <h3>Ecophysiology and Behaviour</h3>
-                <p>How do individual organisms, including humans, respond and adapt to environmental change?</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/complex_system_dalle_crop.png" alt="Research Theme 2. Photo credits: The QUINTESSENCE Consortium (https://www.cell.com/trends/ecology-evolution/fulltext/S0169-5347(15)00300-6)" class="card-image">
-            <div class="card-content">
-                <h3>Systems Analysis</h3>
-                <p>What are the emergent phenomena in complex systems arising from the interactions of individuals? </p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/codesign_dalle.png" alt="Research Theme 3. Photo: https://commons.wikimedia.org/wiki/File:Check_dam_@_shevaroy_foot_hills.jpg" class="card-image">
-            <div class="card-content">
-                <h3>Co-design</h3>
-                <p>How can we collaborate with diverse stakeholders to craft actionable climate solutions?</p>
-            </div>
-        </div>
+        {% for item in site.data.research %}
+            {% include research-card.html 
+                title=item.title 
+                image=item.image 
+                description=item.description %}
+        {% endfor %}
     </div>
     <div class="button-container">
         <button onclick="scrollToSection('featured_project')">Featured projects</button>
@@ -102,68 +49,15 @@
     </div>
 </div>
 
-<div class="section theme1 parallax" id="featured_project2">
+<div class="section theme1 parallax">
     <h2>News</h2>
-    <p><b>1 Jan 2025</b>. Jaideep joins the Centre for Climate Studies, IIT Bombay.</p>
+
+    {% for post in site.posts limit:5 %}
+        <p>
+            <b>{{ post.date | date: "%d %b %Y" }}</b>. 
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </p>
+    {% endfor %}
 </div>
-
-<div class="footer">
-    <div class="logo">
-        <img src="images/logo_small.png" alt="Logo">
-    </div>
-    <div class="footer-column">
-        <h3>Contact</h3>
-        <p>Email: jaideep.joshi at iitb.ac.in</p>
-        <p>Phone: +91-22-2576 5147</p>
-    </div>
-    <div class="footer-column">
-        <h3>Address</h3>
-        <p>403 RBTIC, IIT Bombay</p>
-        <p>Powai, Mumbai 400076</p>
-    </div>
-    <div class="footer-column">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-            <a href="https://twitter.com/jaideepjoshi88"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/jaideep777"><i class="fab fa-github"></i></a>
-    </div>
-    </div>
-    <div class="footer-column">
-        <h3>Quick Links</h3>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a> <!-- Update this link -->
-        <a href="people.html">People</a> <!-- Update this link -->
-        <!-- <a href="#news">News</a> -->
-        <a href="join_us.html">Join us</a>
-        </div>
-    <div class="footer-column site-credits">
-        <p>Website developed by Mandar Bapat and Jaideep Joshi.</p> 
-        <p>Logo designed by Vedika Bapat with inputs from Chethana Casiker and Jaideep Joshi.</p>
-    </div>
-</div>
-
-<script>
-function myFunction() {
-    document.getElementById("myTopnav").classList.toggle("responsive");
-}
-
-/* Function to follow section links by smooth scrolling */ 
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
-
-document.body.onscroll = function() {  
-    var scrolltotop = document.scrollingElement.scrollTop;
-    var parallaxElements = document.querySelectorAll('.parallax');
-    
-    parallaxElements.forEach(function(element) {
-        var factor = element.dataset.speed || 0.5;
-        element.style.backgroundPosition = "center " + (scrolltotop * factor) + "px";
-    });
-}
-</script>
-
-</body>
-</html>
 
 
