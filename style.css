@@ -634,3 +634,31 @@ button:hover {
     color: white;
     border-color: #444;
 }
+
+@media screen and (min-width: 900px) {
+
+  .people-container {
+    flex-direction: column;   /* stack vertically */
+    align-items: stretch;     /* cards take full width */
+  }
+
+  .person-card {
+    display: flex;            /* make card horizontal */
+    align-items: center;
+    width: 100%;              /* full width */
+    max-width: 900px;         /* optional: keeps it readable */
+    margin: 0 auto 20px auto; /* center + spacing */
+    text-align: left;         /* better for horizontal layout */
+    gap: 20px;
+  }
+
+  .person-card img {
+    margin-bottom: 0;         /* remove vertical spacing */
+    flex-shrink: 0;           /* prevent shrinking */
+  }
+
+  .person-card-content {
+    flex: 1;                  /* take remaining space */
+  }
+
+}
