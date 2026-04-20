@@ -12,9 +12,78 @@ pi:
       github: https://github.com/jaideep777
 
 team:
+  - name: Tamanna Mishra
+    role: phd
+    image: /images/people/other/tamanna.jpeg
+    title: PhD Student at IIT Bombay
+    bio: Tamanna's research broadly focuses on assessing the Photosynthetic Traits of, and Variations in Strategies observed in Plants under a variety of environmental conditions. Before joining as a PhD scholar, she did her Bachelors and Masters in Geography, and a PG Diploma in Geoinformatics. Outside the lab, you can usually find her feeding stray cats, practising music or doing art.
+    links:
+
+  - name: Samarpita Sahu
+    role: phd
+    image: /images/people/other/samarpita.jpeg
+    title: PhD Student at IIT Bombay
+    bio: Tamanna's research broadly focuses on assessing the Photosynthetic Traits of, and Variations in Strategies observed in Plants under a variety of environmental conditions. Before joining as a PhD scholar, she did her Bachelors and Masters in Geography, and a PG Diploma in Geoinformatics. Outside the lab, you can usually find her feeding stray cats, practising music or doing art.
+    links:
+
+  - name: Sushil Jangra
+    role: phd
+    image: /images/people/other/sushil_pic.jpeg
+    title: PhD Student at IIT Bombay
+    bio: For Sushil, forests are a place of belonging, and stepping into one feels like entering a story still unfolding. This drew him to the quiet task of understanding these living systems so that we may better protect them and the life they shelter. He studies forest demography in the context of environmental and climate change. His journey has taken him through NIT Kurukshetra, IISc Bengaluru, and the Nature Conservation Foundation. Beyond research, he is drawn to the outdoors, art, and sport, always walking between learning and the wild.
+    links:
+
+  - name: Mohabbat Singh
+    role: phd
+    image: /images/people/other/mohabbat.jpeg
+    title: PhD Student at IIT Bombay
+    bio: Mohabbat's research explores how plants might behave in tomorrow’s world, focusing on resource allocation between plant organs (allocation) and how their growth relationships shape overall plant form and function (allometry) under changing climates. He aims to improve the representation of tropical forests in vegetation models by combining experimental evidence, trait-based approaches, field observations and vegetation modeling. He low-key aspires to turn his research and experiences into stories that connect with people someday. Ultimately, he is part researcher, part storyteller.
+    links:
+
+  - name: Siddhi Mahagaonkar
+    role: phd
+    image: /images/people/avatar_female.avif
+    title: PhD Student at IIT Bombay
+    bio: 
+    links:
+
+  - name: Kiran J M 
+    role: masters
+    image: /images/people/avatar_male.avif
+    title: MTech Student at IIT Bombay
+    bio: 
+    links:
+
+  - name: Aseem Godbole 
+    role: ug
+    image: /images/people/avatar_male.avif
+    title: BTech Student at IIT Bombay
+    bio: 
+    links:
+
+  - name: Tina Garg 
+    role: intern
+    image: /images/people/avatar_female.avif
+    title: Intern
+    bio: 
+    links:
+
 
 cosupervised_current:
-  []
+  - name: Atharva Dhabab
+    role: phd
+    image: /images/people/avatar_male.avif
+    title: PhD Student at IIT Bombay
+    bio: 
+    links:
+
+  - name: Soumili Dutta
+    role: phd
+    image: /images/people/avatar_female.avif
+    title: PhD Student at IIT Bombay
+    bio: 
+    links:
+
 
 alumni:
   - name: Shipra Singh
@@ -26,7 +95,13 @@ alumni:
       globe: https://iiasa.ac.at/staff/shipra-singh
       scholar: https://scholar.google.com/citations?user=8KyphvMAAAAJ&hl=en
 
-cosupervised_alumni:
+  - name: Rishi Naik 
+    role: intern
+    image: /images/people/avatar_male.avif
+    title: Intern
+    bio: 
+    links:
+
   - name: Elisa Stefaniak
     role: postdoc
     image: /images/people/other/elisa_stefaniak.jpg

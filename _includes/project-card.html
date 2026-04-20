@@ -1,0 +1,12 @@
+<div class="card">
+  <img src="{{ include.project.image }}" alt="{{ include.project.title }}" class="card-image">
+
+  <div class="card-content">
+    <h3>{{ include.project.title }}</h3>
+    <p>{{ include.project.description }}</p>
+
+    {% if include.project.link %}
+      <a href="{{ include.project.link }}" class="learn-more">Learn more</a>
+    {% endif %}
+  </div>
+</div>

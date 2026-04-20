@@ -1,0 +1,33 @@
+- title: Phydro
+  image: images/leaf_schematics.png
+  description: >
+    We developed a new theory based on optimality principles to predict
+    the stomatal and biochemical acclimation of leaves to drying soil and air.
+  link: https://www.nature.com/articles/s41477-022-01244-5
+
+- title: Plant-FATE
+  image: images/lsm.png
+  description: >
+    We are developing an eco-evolutionary vegetation model that accounts for
+    adaptations across scales.
+  link: https://github.com/jaideep777/Plant-FATE
+
+- title: libpspm
+  image: images/pspm.png
+  description: >
+    A C++ numerical library for solving physiologically structured population models.
+
+- title: Oligomorphic Dynamics
+  image: images/evolution.png
+  description: >
+    A theory of evolution in continuously structured populations.
+
+- title: Stakeholder Analysis in the Himalaya
+  image: images/stakehodler_analysos.png
+  description: >
+    Understanding ecosystem services and stakeholder preferences.
+
+- title: Living Labs
+  image: images/drone.png
+  description: >
+    Long-term ecosystem monitoring field sites.
