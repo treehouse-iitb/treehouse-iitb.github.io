@@ -1,0 +1,15 @@
+team:
+  - name: Jaideep Joshi
+    role: pi
+    image: /images/people/jaideep.jpg
+    title: Assistant Professor
+    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and group leader of Treehouse. He is also a Guest Research Scholar at the International Institute for Applied Systems Analysis (IIASA), Austria, and a Visiting Researcher at the Okinawa Institute of Science and Technology (OIST), Japan.
+    links:
+      globe: https://jaideep777.github.io
+      email: mailto:jaideep.joshi@iitb.ac.in
+      twitter: https://twitter.com/jaideepjoshi88
+      scholar: https://scholar.google.com/citations?hl=en&user=1kJzNuMAAAAJ
+      github: https://github.com/jaideep777
+
+# Role can be: pi, phd, masters, ug, intern
+
