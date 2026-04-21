@@ -15,72 +15,96 @@ team:
   - name: Tamanna Mishra
     role: phd
     image: /images/people/other/tamanna.jpeg
-    title: PhD Student at IIT Bombay
+    title: PhD Student
     bio: Tamanna's research broadly focuses on assessing the Photosynthetic Traits of, and Variations in Strategies observed in Plants under a variety of environmental conditions. Before joining as a PhD scholar, she did her Bachelors and Masters in Geography, and a PG Diploma in Geoinformatics. Outside the lab, you can usually find her feeding stray cats, practising music or doing art.
     links:
+      email: 25d1244@iitb.ac.in
+      github: https://github.com/tam2398
 
   - name: Samarpita Sahu
     role: phd
     image: /images/people/other/samarpita.jpeg
-    title: PhD Student at IIT Bombay
-    bio: Tamanna's research broadly focuses on assessing the Photosynthetic Traits of, and Variations in Strategies observed in Plants under a variety of environmental conditions. Before joining as a PhD scholar, she did her Bachelors and Masters in Geography, and a PG Diploma in Geoinformatics. Outside the lab, you can usually find her feeding stray cats, practising music or doing art.
+    title: PhD Student
+    bio: Samarpita is currently exploring the fascinating world of plant hydraulics. Her work delves into understanding hydraulic conductance and related functional traits to uncover adaptation strategies amid climate change. A happily confused soul, believing confusion is where science begins. Outside research, she experiments with vibrant Indian fusion cooking, hums melodies to recharge, and unapologetically embraces her sweet tooth. You'll often find her sitting below her own Bodhi tree on campus.
     links:
+      email: mailto:25d1239@iitb.ac.in
+      linkedin: https://www.linkedin.com/in/samarpita-sahu-07244723b
+      scholar: https://scholar.google.com/citations?hl=en&user=1kJzNuMAAAAJ
+      github: https://github.com/samarpita171
 
   - name: Sushil Jangra
     role: phd
     image: /images/people/other/sushil_pic.jpeg
-    title: PhD Student at IIT Bombay
-    bio: For Sushil, forests are a place of belonging, and stepping into one feels like entering a story still unfolding. This drew him to the quiet task of understanding these living systems so that we may better protect them and the life they shelter. He studies forest demography in the context of environmental and climate change. His journey has taken him through NIT Kurukshetra, IISc Bengaluru, and the Nature Conservation Foundation. Beyond research, he is drawn to the outdoors, art, and sport, always walking between learning and the wild.
+    title: PhD Student
+    bio: For Sushil, forests are places of belonging, and stepping into one feels like entering a story still unfolding. This drew him to the quiet pursuit of understanding how these living systems function, change, and endure, so that we may better protect them and the life they shelter. His work focuses on forest dynamics, exploring how climate and species traits shape forest demographics, structure, and composition.
     links:
+      email: mailto:25d1234@iitb.ac.in
+      github: https://github.com/sushiljangra100
+      linkedin: https://www.linkedin.com/in/sushil-jangra1
 
   - name: Mohabbat Singh
     role: phd
     image: /images/people/other/mohabbat.jpeg
-    title: PhD Student at IIT Bombay
+    title: PhD Student
     bio: Mohabbat's research explores how plants might behave in tomorrow's world, focusing on resource allocation between plant organs (allocation) and how their growth relationships shape overall plant form and function (allometry) under changing climates. He aims to improve the representation of tropical forests in vegetation models by combining experimental evidence, trait-based approaches, field observations and vegetation modeling. He low-key aspires to turn his research and experiences into stories that connect with people someday. Ultimately, he is part researcher, part storyteller.
     links:
+      globe: https://jaideep777.github.io
+      email: mailto:mohabbatsingh7777@gmail.com
+      twitter: https://twitter.com/Mohabbatscience
+      linkedin : https://www.linkedin.com/in/mohabbat-science/
+      github: https://github.com/Mohabbatsingh
 
   - name: Siddhi Mahagaonkar
     role: phd
     image: /images/people/avatar_female.avif
-    title: PhD Student at IIT Bombay
+    title: PhD Student
     bio: 
     links:
 
-  - name: Kiran J M 
+  - name: Kiran J M
     role: masters
-    image: /images/people/avatar_male.avif
-    title: MTech Student at IIT Bombay
-    bio: 
+    image: /images/people/other/kiran.jpeg
+    title: MTech Student
+    bio: Kiran is a Master of Technology student in Climate and Sustainability at IIT Bombay. He holds a B.Sc. (Hons.) in Forestry and a Post Graduate Diploma in Remote Sensing & GIS from IIRS, ISRO. His research interests include forest ecology, vegetation dynamics, and climate change impact assessment.
     links:
+      email: mailto:25m2064@iitb.ac.in
+      twitter: https://x.com/KiranJM58962
+      linkedin: https://www.linkedin.com/in/kiran-j-m/
+      github: https://github.com/kiranjmiirs
 
-  - name: Aseem Godbole 
+  - name: Aseem Godbole
     role: ug
-    image: /images/people/avatar_male.avif
-    title: BTech Student at IIT Bombay
-    bio: 
+    image: /images/people/other/Aseem.jpeg
+    title: BTech Student
+    bio: Aseem is an undergraduate student at IIT Bombay pursuing a Bachelor of Technology in Engineering Physics, along with a minor in Artificial Intelligence and Data Science. His interests include mathematics, computer science, data science, and their applications to engineering problems.
     links:
+      email: mailto:aseemgodbole01@gmail.com
+      github: https://github.com/AseemGodbole
 
   - name: Tina Garg 
     role: intern
-    image: /images/people/avatar_female.avif
-    title: Intern
-    bio: 
+    image: /images/people/other/Tina.jpg
+    title: Research Intern
+    bio:  
     links:
 
 
 cosupervised_current:
-  - name: Atharva Dhabab
+  - name: Atharva M Dhabab
     role: phd
-    image: /images/people/avatar_male.avif
-    title: PhD Student at IIT Bombay
-    bio: 
+    image: /images/people/other/atharva.jpeg
+    title: PhD Student
+    bio: Atharva is a doctoral researcher specializing in the intersection of hydrology, ecology, and climatology. Supervised by Prof. Subimal Ghosh and Prof. Jaideep Joshi, his research investigates the resilience of Himalayan grasslands by mapping causal relationships between vegetation, microclimate, and carbon fluxes. An alumnus of VNIT Nagpur and IIT Ropar, Atharva focuses on developing hybrid modeling frameworks that integrate process-based physical understanding with advanced AI/ML approaches. Beyond his research, he is an avid sportsman and musician.
     links:
+      linkdin:  https://www.linkedin.com/in/atharva-m-dhabab-77816a320/
+      email: 25d0296@iitb.ac.in
+      twitter: https://x.com/AtharvaD17
+      github: https://github.com/AMD-1234
 
   - name: Soumili Dutta
     role: phd
     image: /images/people/avatar_female.avif
-    title: PhD Student at IIT Bombay
+    title: PhD Student
     bio: 
     links:
 
