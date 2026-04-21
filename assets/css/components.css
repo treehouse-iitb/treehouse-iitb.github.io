@@ -1,74 +1,4 @@
-:root {
-  --primary-color-dark: #333; /* Dark background color */
-  --secondary-color-dark: #04AA6D; /* Active link background color */
-  --text-color-dark: #f2f2f2; /* Light text color */
-  --hover-text-color-dark: green; /* Text color on hover */
-  --hover-bg-color-dark: #f2f2f2; /* Background color on hover */
-  --active-text-color-dark: white; /* Active link text color */
 
-  --primary-color: #f2f2f2; /* Dark background color */
-  --secondary-color: #04AA6D; /* Active link background color */
-  --text-color: #333; /* Light text color */
-  --hover-text-color: green; /* Text color on hover */
-  --hover-bg-color: #333; /* Background color on hover */
-  --active-text-color: black; /* Active link text color */
-
-  --navbar-padding-top: 40px; 
-  --navbar-padding-right: 35px; 
-  --navbar-font-size: 20px; 
-  --navbar-total-height: calc((var(--navbar-padding-top)*2 + var(--navbar-font-size))); /* Navbar height should be 2*padding+font. */
-
-  --logo-margin-top: 10px;
-  --debug-borders: 1px solid red;
-
-  --p-font-size: 18px;
-  --p-font-size-small: 16px;
-  --p-font-size-card: 16px;
-
-}
-
-
-body {
-  margin: 0; /* Remove default margin from all sides of the body */
-  padding: 0;
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif; /* Set the font style for the entire page */
-}
-
-.parallax {
-  background-attachment: scroll;
-  background-size: cover;
-  background-position: center center;
-}
-
-.section {
-  padding: 50px 5%; /* Add consistent padding for all content */
-  text-align: left;
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-}
-
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.section h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.section h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: var(--p-font-size);
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
 
 
 .button-container {
@@ -109,11 +39,11 @@ button:hover {
 
 
 #cover-section {
-  background-image: url('images/cover_vanoshi_river.jpg');
+  background-image: url('/images/cover_vanoshi_river.jpg');
 }
 
 #featured_project {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.1) 100%), url('images/amazon.jpg');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.1) 100%), url('/images/amazon.jpg');
   position: relative;
 }
 
