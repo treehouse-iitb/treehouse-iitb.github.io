@@ -1,0 +1,38 @@
+---
+layout: default
+title: CM 703 Projects
+course_code: cm703
+---
+
+{% assign course = site.data.course_projects.courses | where: "code", page.course_code | first %}
+
+<div class="section theme1">
+    <h2>{{ course.title }}</h2>
+    <h2>Featured Course Projects</h2>
+
+    {% for year_block in course.years %}
+
+        <h3>{{ year_block.year }}</h3>
+
+        <div class="course-project-container">
+
+            {% for p in year_block.projects %}
+            <div class="course-project">
+
+                <a href="https://youtu.be/{{ p.youtube_id }}" target="_blank">
+                    <img src="https://img.youtube.com/vi/{{ p.youtube_id }}/hqdefault.jpg" alt="{{ p.name }}">
+                </a>
+
+                <h4>
+                    <a href="https://youtu.be/{{ p.youtube_id }}" target="_blank">
+                        {{ p.name }}
+                    </a>
+                </h4>
+
+            </div>
+            {% endfor %}
+
+        </div>
+
+    {% endfor %}
+</div>

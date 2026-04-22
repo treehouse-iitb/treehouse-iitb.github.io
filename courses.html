@@ -1,0 +1,36 @@
+---
+layout: default
+title: Courses - Treehouse IITB
+---
+
+<div class="section theme1">
+    <h2>Courses</h2>
+
+    <div class="card-container">
+
+        {% for course in site.data.course_projects.courses %}
+        <div class="card">
+            <img src="{{ course.image }}" class="card-image" alt="{{ course.title }}">
+
+            <div class="card-content">
+                <h3>{{ course.title }}</h3>
+
+                <p>{{ course.description }}</p>
+
+                <!-- Optional: show available years -->
+                <p class="course-years">
+                    {% assign years = course.years | sort: "year" | reverse %}
+                    {% for y in years %}
+                        {{ y.year }}{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </p>
+
+                <a href="{{ course.code }}_projects.html" class="learn-more">
+                    Featured Course Projects →
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>

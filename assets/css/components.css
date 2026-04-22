@@ -592,3 +592,78 @@ button:hover {
   }
 
 }
+
+
+.course-project-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 70px 90px;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.course-project {
+  text-align: center;
+}
+
+.course-project img {
+  width: 200px;
+  border: 2px solid var(--hover-text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-project img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+.course-project h4 {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.course-project a {
+  color: var(--hover-text-color);
+  text-decoration: underline;
+}
+
+.course-project a:hover {
+  color: darkgreen;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .course-project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .course-project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.course-card {
+  background: var(--primary-color);
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.course-card h3 {
+  margin-bottom: 10px;
+}
+
+.course-years {
+  color: #666;
+  margin-bottom: 10px;
+}

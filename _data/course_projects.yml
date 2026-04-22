@@ -1,0 +1,59 @@
+courses:
+  - code: cm617
+    title: "Sustainability Principles and Practices (CM 617)"
+    image: /images/complex_system.jpg
+    description: "Sustainability Principles and Practices (detail)"
+    years:
+      - year: 2025
+        projects:
+        - name: "BIRDS"
+          youtube_id: "wizyiXi-L6w"
+
+        - name: "dona-pattAl"
+          youtube_id: "hLiJpgkwRTw"
+
+        - name: "SuRgents"
+          youtube_id: "LGNz_JQ3nXM"
+
+        - name: "BluePrint"
+          youtube_id: "eJjrvhVAQR8"
+
+        - name: "FUELIQ"
+          youtube_id: "lvnOM0SZ-Yo"
+
+        - name: "StepVolt"
+          youtube_id: "OGTWoPboufY"
+
+        - name: "DACE"
+          youtube_id: "7O2KuUaB080"
+
+        - name: "ECO-PLAY"
+          youtube_id: "vMaY6aOO_58"
+
+      - year: 2026
+
+  - code: cm703
+    title: "Terrestrial Ecosystem Ecology (CM 703)"
+    image: /images/amazon.jpg
+    description: "Terrestrial Ecosystem Ecology (detail)"
+    years:
+      - year: 2026
+        projects:
+          - name: "COMMIT"
+            youtube_id: "k_9s8Yef62U"
+
+          - name: "MoTRes"
+            youtube_id: "ydYuxLcNGDE"
+
+          - name: "NightFlow"
+            youtube_id: "HhUqUZmVFJQ"
+
+          - name: "PRAKRITI"
+            youtube_id: "POnmpHnvr40"
+
+          - name: "ROOTED"
+            youtube_id: "BRLnYLs3gHg"
+
+          - name: "TRY-FLUX"
+            youtube_id: "cTwEqg1pqxM"
+
