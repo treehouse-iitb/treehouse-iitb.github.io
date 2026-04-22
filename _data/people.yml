@@ -54,12 +54,14 @@ team:
       linkedin : https://www.linkedin.com/in/mohabbat-science/
       github: https://github.com/Mohabbatsingh
 
-  - name: Siddhi Mahagaonkar
+  - name: Siddhi Rashmin Mahagaonkar
     role: phd
-    image: /images/people/avatar_female.avif
-    title: PhD Student
-    bio: 
+    image: /images/people/other/siddhi.jpg
+    title: Phd Student
+    bio: Siddhi is currently pursuing a PhD in the field of governance of Commons from the perspectives of Indian Knowledge Systems and Game Theory. She is attempting to form an indigenous model of Commons governance. She is a curious soul, always eager to learn new things. She completed her graduation in Electronics and Telecommunication and has a Masters degree in Sociology. Apart from academics, she loves watching movies and OTT series, attending conferences, and having subsequent vicharmanthans on them. She enjoys performing arts like drama and Bharatanatyam.
     links:
+      email: mailto:24d1239@iitb.ac.in
+
 
   - name: Kiran J M
     role: masters
@@ -84,9 +86,13 @@ team:
   - name: Tina Garg 
     role: intern
     image: /images/people/other/Tina.jpg
-    title: Research Intern
-    bio:  
+    title: Intern
+    bio: Tina graduated from IIT Bombay in 2024 with a Bachelor of Technology in Engineering Physics. Her interests include all kinds of books, environmental sustainability and tennis. She's a prolific science communicator and runs her own YouTube channel on climate and sustainability.
     links:
+      email: mailto:tinagarg@iitb.ac.in
+      linkedin: https://www.linkedin.com/in/tinaggarg/
+      youtube: https://www.youtube.com/@tinagarg
+
 
 
 cosupervised_current:
@@ -123,7 +129,7 @@ alumni:
     role: intern
     image: /images/people/avatar_male.avif
     title: Intern
-    bio: 
+    bio: Rishi worked on developing a Visual Twin of the PlantFATE model.
     links:
 
   - name: Elisa Stefaniak

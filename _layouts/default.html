@@ -57,31 +57,33 @@ window.addEventListener('scroll', () => {
     });
 });
 
-function filterPeople(role) {
+function filterPeople(event, role) {
     const cards = document.querySelectorAll('.person-card');
     const buttons = document.querySelectorAll('.filter-buttons button');
 
-    // Toggle active button
     buttons.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
 
-    // Filter cards
+    const filter = role.toLowerCase();
+
     cards.forEach(card => {
 
-        // ✅ Always show PI
+        // Always show PI
         if (card.classList.contains('pi-card')) {
-            card.style.display = 'block';
+            card.classList.remove('hidden');
             return;
         }
 
-        // Normal filtering
-        if (role === 'all' || card.dataset.role === role) {
-            card.style.display = 'block';
+        const cardRole = card.dataset.role?.toLowerCase();
+
+        if (filter === 'all' || cardRole === filter) {
+            card.classList.remove('hidden');
         } else {
-            card.style.display = 'none';
+            card.classList.add('hidden');
         }
     });
 }
+
 </script>
 
 </body>
