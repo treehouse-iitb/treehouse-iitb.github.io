@@ -16,6 +16,7 @@
   image: images/pspm.png
   description: >
     A C++ numerical library for solving physiologically structured population models.
+  link: https://jaideep777.github.io/libpspm/
 
 - title: Oligomorphic Dynamics
   image: images/evolution.png
@@ -31,3 +32,4 @@
   image: images/drone.png
   description: >
     Long-term ecosystem monitoring field sites.
+  link: https://youtu.be/rmE9fzWSqg0

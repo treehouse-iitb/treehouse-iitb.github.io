@@ -3,7 +3,7 @@ pi:
     role: pi
     image: /images/people/jaideep.jpg
     title: Assistant Professor
-    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and group leader of Treehouse. He is also a Guest Research Scholar at the International Institute for Applied Systems Analysis (IIASA), Austria, and a Visiting Researcher at the Okinawa Institute of Science and Technology (OIST), Japan.
+    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and leads Treehouse. He also holds visiting affiliations with the International Institute for Applied Systems Analysis (IIASA) and the Okinawa Institute of Science and Technology (OIST). Professionally, he studies forest ecology and climate change; personally, he is happiest outdoors among forests and mountain trails. He has a longstanding interest in Indian philosophy, which occasionally sneaks into conversations about nature and the world. Every now and then, he exchanges research papers for sketchbooks to explore figure drawing with considerably less concern for peer review.
     links:
       globe: https://jaideep777.github.io
       email: mailto:jaideep.joshi@iitb.ac.in
@@ -109,10 +109,13 @@ cosupervised_current:
 
   - name: Soumili Dutta
     role: phd
-    image: /images/people/avatar_female.avif
-    title: PhD Student
-    bio: 
+    image: /images/people/soumili.jpg
+    title: phd student at IIT Bombay
+    bio: Jointly supervised by Prof. Karthikeyan Lanka and Prof. Jaideep Joshi, Soumili’s research focuses on understanding how ecosystems respond during dry climate extremes. She is particularly interested in exploring vegetation dynamics under soil moisture stress and the how they adapt to environmental changes. When not immersed in research, she can be found sketching, binge-watching a good series, or getting lost in fiction, and believes that a good story can be found anywhere - from satellite images to the halls of Hogwarts.
     links:
+      email: mailto:soumilidutta@iitb.ac.in
+      linkedin: https://www.linkedin.com/in/soumili-dutta-676161186/
+      scholar: https://scholar.google.com/citations?user=u_v78fcAAAAJ&hl=en
 
 
 alumni:
