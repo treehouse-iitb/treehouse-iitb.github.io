@@ -3,7 +3,7 @@ pi:
     role: pi
     image: /images/people/jaideep.jpg
     title: Assistant Professor
-    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and leads Treehouse. He also holds visiting affiliations with the International Institute for Applied Systems Analysis (IIASA) and the Okinawa Institute of Science and Technology (OIST). Professionally, he studies forest ecology and climate change; personally, he is happiest outdoors among forests and mountain trails. He has a longstanding interest in Indian philosophy, which occasionally sneaks into conversations about nature and the world. Every now and then, he exchanges research papers for sketchbooks with considerably less concern for peer review.
+    bio: Jaideep is Assistant Professor at the Centre for Climate Studies and leads Treehouse. He also holds visiting affiliations with the International Institute for Applied Systems Analysis (IIASA) and the Okinawa Institute of Science and Technology (OIST). Professionally, he studies forest ecology and climate change; personally, he is happiest outdoors among forests and mountain trails. He has a longstanding interest in Indian philosophy, which occasionally sneaks into conversations about nature and the world. Every now and then, he exchanges research papers for sketchbooks, with considerably less concern for peer review.
     links:
       globe: https://jaideep777.github.io
       email: mailto:jaideep.joshi@iitb.ac.in
