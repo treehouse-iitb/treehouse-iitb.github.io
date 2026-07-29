@@ -1,0 +1,12 @@
+title: Treehouse IITB
+url: "https://treehouse-iitb.github.io"
+baseurl: ""
+description: "Treehouse IITB is a ecology and climate resilience research group at IIT Bombay led by Professor Jaideep Joshi."
+keywords: "Jaideep Joshi, IIT Bombay, Treehouse IITB, climate resilience, forest ecology"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - Gemfile.lock
+  - node_modules
+  - _site
